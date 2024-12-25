@@ -1,0 +1,19 @@
+n=int(input())
+a=list(map(int,input().split()))
+e=[]
+o=[]
+ans=[]
+for i in a:
+    if i%2==0:
+        e.append(i)
+    else:
+        o.append(i)
+
+for i in range(max(len(e),len(o))):
+    if i < len(e):
+        ans.append(e[i])
+    if i < len(o):
+        ans.append(o[i])
+if n%2!=0:
+    ans.append(0)
+print(*ans)
