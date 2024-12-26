@@ -1,0 +1,7 @@
+n=int(input())
+a=str(n)
+a1=a[::-1]
+if a==a1:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
