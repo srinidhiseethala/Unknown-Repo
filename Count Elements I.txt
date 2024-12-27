@@ -1,0 +1,10 @@
+n,m=map(int,input().split())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+c=0
+s=set()
+for i in a:
+    if i in b and i not in s:
+        c+=1
+        s.add(i)
+print(c)
