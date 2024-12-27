@@ -1,0 +1,6 @@
+s=input()
+a=s.split()
+ans=""
+for i in a:
+    ans+="".join(reversed(i))+" "
+print(ans)
